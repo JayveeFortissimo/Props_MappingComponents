@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Parent{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(38, 14, 61);
+}
+
+.Childs{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+justify-content: center;
+align-items: center;
+}
+
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.text h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    background: linear-gradient(rgb(209, 29, 209), aqua);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Make the text color transparent to show the background */
+    display: inline-block; /* Required for gradients in some cases */
+}
+
+.maping{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.toChildren{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+   flex-wrap: wrap;
+   background-color: rgb(16, 7, 24);
+   height: auto;
+padding: 50px;
+color: aliceblue;
+
+}
+.secret{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    color: aliceblue;
+}
+
+@media screen and (max-width:600px) {
+    .Childs{
+        margin-top: 100px;
+    }
+    p{
+        padding: 20px;
+        text-align: center;
+    }
+}
